@@ -166,7 +166,7 @@ section.section p { margin-bottom: 24px; }
     padding: 12px;
     text-align: center;
     border: 1px solid #527e98;
-    color: #e8f4fa;
+    color: #222222;
 }
 
 .services-page main table tbody tr:nth-child(even) {
