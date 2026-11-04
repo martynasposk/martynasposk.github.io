@@ -1,0 +1,185 @@
+:root {
+    --default-font: Tahoma, Arial, sans-serif;
+    --heading-font: Georgia, "Times New Roman", serif;
+    --nav-font: Tahoma, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--default-font);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: #f1f7fb;
+}
+
+h1 { font-size: 40px; font-weight: 700; }
+h2 { font-size: 32px; }
+h3 { font-size: 26px; }
+h4 { font-size: 22px; }
+h5 { font-size: 19px; }
+h6 { font-size: 17px; }
+
+p, .section-title p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d3e3ec;
+    margin-bottom: 20px;
+}
+
+.section-title h2 { color: #f1f7fb; }
+
+.btn {
+    background-color: #234e70;
+    color: #ffffff;
+    border: 2px solid #438db4;
+    border-radius: 12px;
+    padding: 12px 24px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #397ba1;
+    border-color: #83c6ea;
+    color: #ffffff;
+}
+
+.btn:active {
+    background-color: #16364d;
+    transform: scale(0.97);
+}
+
+.hero .hero-actions .btn {
+    border-radius: 12px;
+    padding: 12px 24px;
+}
+
+.hero .hero-actions .btn.btn-primary {
+    background: #234e70;
+    border-color: #438db4;
+    color: #ffffff;
+}
+
+.hero .hero-actions .btn.btn-primary:hover {
+    background: #397ba1;
+    border-color: #83c6ea;
+    color: #ffffff;
+}
+
+.hero .hero-actions .btn.btn-primary:active {
+    background: #16364d;
+    transform: scale(0.97);
+}
+
+.hero .hero-actions .btn.btn-outline {
+    color: #9bdbfa;
+    border-color: #69b8e2;
+}
+
+.hero .hero-actions .btn.btn-outline:hover {
+    color: #ffffff;
+    background: #234e70;
+    border-color: #83c6ea;
+}
+
+.hero .hero-actions .btn.btn-outline:active {
+    background: #16364d;
+    transform: scale(0.97);
+}
+
+a { color: #8fd0f1; text-decoration: none; transition: color 0.3s; }
+a:hover { color: #c1e9ff; text-decoration: underline; }
+a:active { color: #ffffff; }
+
+section.section {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+section.section > .container {
+    padding: 35px;
+    border: 2px solid #365d72;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.025);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+section.section p { margin-bottom: 24px; }
+
+.header {
+    background-color: #172f43;
+    border-bottom: 3px solid #3b8bae;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+}
+
+.header .navmenu a:hover,
+.header .navmenu .active { color: #a7e3ff; }
+
+.skills .skill-box .progress,
+.resume .skill-item .progress {
+    border-radius: 10px;
+    background: #294454;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.skills .skill-box .progress .progress-bar,
+.resume .skill-item .progress .progress-bar {
+    background: linear-gradient(90deg, #2376a0, #56b6d8);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.services-page main .container > ol {
+    list-style-type: upper-roman;
+    padding-left: 35px;
+}
+
+.services-page main .container > ul {
+    list-style-type: square;
+    padding-left: 35px;
+}
+
+.services-page main .container li > ul,
+.services-page main .container li > ol {
+    list-style-type: circle;
+    margin-top: 8px;
+    padding-left: 25px;
+}
+
+.services-page main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-page main table th {
+    background: #234e70;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #527e98;
+}
+
+.services-page main table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #527e98;
+    color: #e8f4fa;
+}
+
+.services-page main table tbody tr:nth-child(even) {
+    background-color: #254153;
+}
+
+.services-page main table tbody tr:hover {
+    background-color: #31596e;
+}
+
+@media (max-width: 767px) {
+    section.section { padding-top: 45px; padding-bottom: 45px; }
+    section.section > .container { padding: 18px; border-radius: 12px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+}
